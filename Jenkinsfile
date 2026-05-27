@@ -48,16 +48,6 @@ pipeline {
                 }    
             }
         }
-        stage('installing dependecies') {
-            steps {
-                 script {
-                    sh """
-                        npm install --include=dev
-                    """    
-                }  
-            }
-        }
-  
     }
     post {
         always {
